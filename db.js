@@ -1,7 +1,7 @@
-const mongoose = require("mongoose")
+import mongoose from 'mongoose';
 const Db = process.env.MONGODB_URL;
 const cnmg = () => mongoose.connect(Db, {
-    useNewUrlParser: true,
+    
 
 }).then(() => {
     console.log("success");
@@ -10,4 +10,4 @@ const cnmg = () => mongoose.connect(Db, {
 })
 
 
-module.exports = cnmg;
+export default cnmg;

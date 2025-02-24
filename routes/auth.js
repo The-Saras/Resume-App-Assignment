@@ -1,5 +1,4 @@
 import express from 'express';
-import mongoose from 'mongoose';
 import jsonwebtoken from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import User from '../models/User.js';  
